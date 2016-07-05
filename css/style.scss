@@ -1,0 +1,26 @@
+---
+---
+
+@import "bootstrap";
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background: blue;
+}
+
+.container {
+  background: red;
+  display: block;
+  vertical-align: middle;
+  float: none;
+}
+
+.content {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 60%;
+  height: 60%;
+  background: yellow;
+}

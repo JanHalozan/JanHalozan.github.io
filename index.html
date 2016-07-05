@@ -1,23 +1,27 @@
 ---
-layout: default
 ---
 
-<div class="home">
+<!DOCTYPE html>
+<html>
 
-  <h1 class="page-heading">JanHalozan</h1>
+  {% include head.html %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="content">
+          <div class="col-md-6">
+            <p>
+              LEVA
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              destna
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
