@@ -88,3 +88,28 @@ h1, h2, h3, h4, h5, h6, p, li, span {
     text-decoration: none;
   }
 }
+
+.social-media-list {
+  position: absolute;
+  bottom: 1em;
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    float: left;
+    padding: 0 0.5em;
+  }
+}
+
+.icon {
+    > svg {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+
+        path {
+            fill: #828282;
+        }
+    }
+}

@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: JanHalozan
+title: Jan's Placee
 email: j.halozan.services@gmail.com
 description: > # TODO :>
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+url: "http://janhalozan.com" # the base hostname & protocol for your site
+twitter_username: JanHalozan
 github_username:  JanHalozan
 
 # Build settings
