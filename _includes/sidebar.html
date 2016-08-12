@@ -1,20 +1,23 @@
-<ul class="main-nav">
-  <li><a href="#">About</a></li>
-  <li><a href="#">Projects</a></li>
-  <li><a href="#">Blog</a></li>
-</ul>
-<div class="social">
-  <ul class="social-media-list">
-    {% if site.github_username %}
-    <li>
-      {% include icon-github.html username=site.github_username %}
-    </li>
-    {% endif %}
-
-    {% if site.twitter_username %}
-    <li>
-      {% include icon-twitter.html username=site.twitter_username %}
-    </li>
-    {% endif %}
+<nav class="navbar-collapse" role="navigation">
+  <ul class="main-nav">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Blog</a></li>
   </ul>
-</div>
+  <div class="social">
+    <ul class="social-media-list">
+      {% if site.github_username %}
+      <li>
+        {% include icon-github.html username=site.github_username %}
+      </li>
+      {% endif %}
+
+      {% if site.twitter_username %}
+      <li>
+        {% include icon-twitter.html username=site.twitter_username %}
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+
+</nav>

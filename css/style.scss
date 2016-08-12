@@ -47,11 +47,13 @@ h1, h2, h3, h4, h5, h6, p, li, span {
 
   height: 100%;
   position: relative;
+  // float: left;
 }
 
 .right-col {
   height: 100%;
   position: relative;
+  // float: right;
 }
 
 .title-container {
@@ -68,6 +70,7 @@ h1, h2, h3, h4, h5, h6, p, li, span {
     width: 10em;
     height: 10em;
     border-radius: 9999em;
+    background: white;
   }
 
   .title {
