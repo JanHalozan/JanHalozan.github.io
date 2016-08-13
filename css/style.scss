@@ -23,6 +23,8 @@ h1, h2, h3, h4, h5, h6, p, li, span {
 }
 
 .container {
+  width: 100%;
+  height: 100%;
 }
 
 .content {
@@ -47,13 +49,13 @@ h1, h2, h3, h4, h5, h6, p, li, span {
 
   height: 100%;
   position: relative;
-  // float: left;
+  float: left;
 }
 
 .right-col {
   height: 100%;
   position: relative;
-  // float: right;
+  float: right;
 }
 
 .title-container {
