@@ -33,32 +33,7 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row content">
-        <div class="col-md-6 hidden-xs hidden-sm right-col">
-          <div class="content-container">
-            <nav class="navbar-collapse" role="navigation">
-              <ul class="main-nav">
-                {% include sidebar.html %}
-
-                <div class="social">
-                  <ul class="social-media-list">
-                    {% if site.github_username %}
-                    <li>{% include icon-github.html username=site.github_username %}</li>
-                    {% endif %}
-
-                    {% if site.twitter_username %}
-                    <li>{% include icon-twitter.html username=site.twitter_username %}</li>
-                    {% endif %}
-                  </ul>
-                </div>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 left-col">
-          {{ content }}
-        </div>
-      </div>
+      {{ content }}
     </div>
   </body>
 </html>

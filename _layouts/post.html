@@ -1,15 +1,47 @@
 ---
-layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+  {% include head.html %}
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <body>
+    <nav class="navbar navbar-default visible-xs-block visible-sm-block" style="z-index: 1000;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            {% include sidebar.html %}
+            <li style="height: 40px;">
+              <ul class="social-media-list" style="display: block;">
+                {% if site.github_username %}
+                <li>{% include icon-github.html username=site.github_username %}</li>
+                {% endif %}
 
-</article>
+                {% if site.twitter_username %}
+                <li>{% include icon-twitter.html username=site.twitter_username %}</li>
+                {% endif %}
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row content">
+        <div class="row content">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,76 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
 
-<div class="title-container">
-  <img src="https://avatars1.githubusercontent.com/u/5421084?v=3&s=460" alt="Me" />
-  <h2 class="title">Jan's Place</h2>
-  <h5 class="subtitle">I make things. Interesting things.</h5>
-</div>
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">
+
+  <body>
+    <nav class="navbar navbar-default visible-xs-block visible-sm-block" style="z-index: 1000;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            {% include sidebar.html %}
+            <li style="height: 40px;">
+              <ul class="social-media-list" style="display: block;">
+                {% if site.github_username %}
+                <li>{% include icon-github.html username=site.github_username %}</li>
+                {% endif %}
+
+                {% if site.twitter_username %}
+                <li>{% include icon-twitter.html username=site.twitter_username %}</li>
+                {% endif %}
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row content">
+        <div class="col-md-6 hidden-xs hidden-sm right-col">
+          <div class="content-container">
+            <nav class="navbar-collapse" role="navigation">
+              <ul class="main-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+
+                <div class="social">
+                  <ul class="social-media-list">
+                    {% if site.github_username %}
+                    <li>{% include icon-github.html username=site.github_username %}</li>
+                    {% endif %}
+
+                    {% if site.twitter_username %}
+                    <li>{% include icon-twitter.html username=site.twitter_username %}</li>
+                    {% endif %}
+                  </ul>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 left-col">
+          <div class="title-container">
+            <img src="https://avatars1.githubusercontent.com/u/5421084?v=3&s=460" alt="Me" />
+            <h2 class="title">Jan's Place</h2>
+            <h5 class="subtitle">I make things. Interesting things.</h5>
+            <h6>This page is a work in progress.</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
