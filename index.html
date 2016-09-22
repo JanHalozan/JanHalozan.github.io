@@ -41,11 +41,7 @@
           <div class="content-container">
             <nav class="navbar-collapse" role="navigation">
               <ul class="main-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/blog">Blog</a></li>
-
+                {% include sidebar.html %}
                 <div class="social">
                   <ul class="social-media-list">
                     {% if site.github_username %}
