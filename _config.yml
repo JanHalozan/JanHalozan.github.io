@@ -1,24 +1,24 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Jan's Place
+header-img: img/home-bg.jpg
 email: j.halozan.services@gmail.com
-description: > # TODO :>
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://janhalozan.com" # the base hostname & protocol for your site
+copyright_name: JanHalozan
+description: "Write your site description here. It will be used as your sites meta description as well!"
+baseurl: ""
+url: "http://janhalozan.com"
 twitter_username: JanHalozan
 github_username:  JanHalozan
+facebook_username:  JanHalozan
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-exclude: ["node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
