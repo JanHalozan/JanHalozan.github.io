@@ -3,7 +3,7 @@ title: Jan's Place
 header-img: img/home-bg.jpg
 email: j.halozan.services@gmail.com
 copyright_name: JanHalozan
-description: "Write your site description here. It will be used as your sites meta description as well!"
+description: "A mix of computer science related articles & projects, you might even find something interesting. Also home of me - Jan Halozan."
 baseurl: ""
 url: "http://janhalozan.com"
 twitter_username: JanHalozan
@@ -11,8 +11,7 @@ github_username:  JanHalozan
 facebook_username:  JanHalozan
 
 # Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+google_tracking_id: UA-27826743-2
 
 # Build settings
 markdown: kramdown

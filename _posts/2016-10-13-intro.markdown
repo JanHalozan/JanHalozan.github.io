@@ -1,0 +1,12 @@
+---
+layout:     post
+title:      "Aaaand we're off"
+subtitle:   "Welcome to Jan's place."
+date:       2016-10-13 21:00:00
+author:     "Jan"
+header-img: "img/post-bg-1.jpg"
+---
+
+## Howdy stranger.
+
+I'll write this soon. I promise13
