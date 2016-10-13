@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Jan's Placee
+title: Jan's Place
 email: j.halozan.services@gmail.com
 description: > # TODO :>
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -16,3 +16,9 @@ github_username:  JanHalozan
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
