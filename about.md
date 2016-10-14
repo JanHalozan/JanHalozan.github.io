@@ -19,7 +19,7 @@ I'm a software engineer based in Slovenia. Passionate about artificial intellige
 
 ## What do I do?
 
-I make high quality iOS apps. The ones that make people's eyes pop out. And that's no joke. I also hack every now and then and the results range from hardware things (like gimbals, drones, ...) to software... You know what? Just take a look around my page to see what I do.
+I make high quality iOS apps. The ones that make people's eyes pop out. And that's no joke. I also hack every now and then and the results range from hardware contraptions (like gimbals, drones, ...) to software things such as... You know what? Just take a look around my page to see what I do.
 
 ## Work
 
@@ -30,6 +30,6 @@ I'm currently the lead iOS developer at [Databox](https://databox.com). We're bu
 
 I **love** snowboarding. And surfing. And skating. And calisthenics.
 
-## Want to know more?
+## Want to know more? Contact.
 
 So do I. Drop me a line at [j.halozan.services@gmail.com](mailto:j.halozan.services@gmail.com).
