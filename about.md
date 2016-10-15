@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: "This is what I do."
+description: "This is who I am."
 header-img: "img/about-bg.jpg"
 ---
 
@@ -13,7 +13,7 @@ Hi, I'm Jan.
 
 I am batman.
 
-## OK Who I really really am?
+## OK who I really really am?
 
 I'm a software engineer based in Slovenia. Passionate about artificial intelligence, neural networks, iOS, Swift, design, hardware, computer science in all of its glory and technology in general.
 
@@ -24,7 +24,6 @@ I make high quality iOS apps. The ones that make people's eyes pop out. And that
 ## Work
 
 I'm currently the lead iOS developer at [Databox](https://databox.com). We're building the best mobile-first business analytics platform on the planet.
-
 
 ## Other interests
 
