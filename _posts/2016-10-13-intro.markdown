@@ -13,16 +13,12 @@ Welcome to Jan's place. I've been wanting to set this thing up for a long time. 
 
 I'm a computer science geek and have been one for a long time. I've put together some fun projects in my past and never got around to really share them. This is what this blog / page is about. I'll be sharing the things I do and explaining how you can do them yourself.
 
-Things have changed quite a bit since I first wanted to have a blog (was around 2011). I hadn't had a job and was still in high school. I had a crapload of free time and I could do pretty much I wanted. Now I'm 23 and have a serious job which is perfect but sucks at the same time. Having a job means two things. The first one is that I get paid and can support living by myself and all around can do a lot more on my own. The second one is that I have a responsibility which is quite serious - I have to work and be good at it. And when you're working in a startup things aren't easy. Coming home after 5pm all worked up means that I have a lot less time and energy to do hobby things. I like spending time with my friends & gf to kind of decompress after a day of work. But enough about this.
+Life has changed quite a bit since I first wanted to have a blog (was around 2011). I hadn't had a job and was still in high school. I had a crapload of free time and I could do pretty much whatever I wanted. Now I'm 23 and have a serious job which is perfect but sucks at the same time. Having a job means two things. The first one is that I get paid and can support living by myself and all around can do a lot more on my own. The second one is that I have a responsibility which is quite serious - I have to work and be good at it. And when you're working in a startup things aren't easy. Coming home after 5pm all worked up means that I have a lot less time and energy to do hobby things. I like spending time with my friends & gf to kind of decompress work. But enough about the lame stuff :)
 
 I might post rarely in here but I promise that things will be fun.
 
 I'm currently working on finishing a [Convolutional Neural Network](https://github.com/JanHalozan/ConvolutionalNeuralNetwork) which will be used as my graduation study. I have passed all of my college exams, just haven't graduated yet. So as soon as I do that I'll write about how to write one from scratch. Also I'm working on a DIY [gimbal](https://en.wikipedia.org/wiki/Gimbal) for a GoPro camera. As soon as I finish it I'll post about that as well.
 
 Enough bragging and me trying to convince you to stick around. As soon as there is something valuable here you'll decide if you like it or not.
-
-### Let's start things out
-
-This blog is running on Jekyll, hosted on GitHub, and domain bought on GoDaddy. And because I hate CSS as much as you do I used [this template](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll).
 
 Until next time - Jan out.
