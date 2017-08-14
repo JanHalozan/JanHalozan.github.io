@@ -94,6 +94,10 @@ That being said let's dive straight into the code. The first pass calculates all
 
 If you'd like me to explain the Unity part in more detail do let me know.
 
+Below is an example of how the end result will look like. I set a green color and didn't add any texture.
+
+![example](/img/post1/example.png)
+
 ### The code
 
 By now you should know enough that the code below will be pretty easy to understand.
