@@ -38,9 +38,10 @@ First let's talk about what we want our shader to do:
 - Support for pulsation ie. expanding and shrinking of the material
 
 Let's look at how this looks in the finished shader:  
-_You can see a larger size image by right clicking on it and "Copy Image Address" and open it in a new tab._
 
+<a href="/img/post-shieldshader/shader_graph.png">
 ![shader structure](/img/post-shieldshader/shader_graph.png)
+</a>
 
 Now we'll break it down and cover it piece by piece. First let's look at textures are done. We'll start with an empty 3D sphere and work on from there. I created an empty ASE shader and slapped it on a sphere.
 
@@ -85,7 +86,8 @@ Connecting the elements together is pretty simple. We use the textures and fresn
 
 ## Conclusion
 
-We have managed to produce a nice effect that is not limited to just spheres. We can use it as a force field, a shield or any other stylized effect. ASE also simplifies things quite a bit with providing some out of the box blocks such as Fresnel, Desaturate, and Panner. The code for the shader is available below. You can edit it in ASE.
+We have managed to produce a nice effect that is not limited to just spheres. We can use it as a force field, a shield or any other stylized effect. ASE also simplifies things quite a bit with providing some out of the box blocks such as Fresnel, Desaturate, and Panner. The code for the shader is available below. You can edit it in ASE.  
+The shader is inspired by [AdultLink's HoloShield](https://github.com/AdultLink/HoloShield) whish is a similar shader but on steroids. It does however lack support for mobile devices which was crucial in my case.
 
 ## Code
 
