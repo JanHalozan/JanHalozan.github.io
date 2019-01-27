@@ -5,6 +5,8 @@ description: "This is who I am."
 header-img: "img/about-bg.jpg"
 ---
 
+<img src="/img/about_avatar.jpg" width="300px" class="center-image" style="border-radius: 50%"/>
+
 ## Who am I?
 
 Hi, I'm Jan Halozan.
