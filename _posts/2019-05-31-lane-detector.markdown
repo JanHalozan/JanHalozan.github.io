@@ -77,7 +77,7 @@ How do we code this in C++ you might ask?
 
 With respect to the algoritm described above we have to start first by reading the video file. This is just regular OpenCV boilerplate.
 
-```
+```c++
 Mat org;
     
 while (true)
@@ -98,7 +98,7 @@ cap.release(); //Don't forget to clean up after ourselves
 So we read the image frame by frame and display it. The algorithm described above is pretty simple and works on a single image instead of a sequence. So what we'll do is we'll read the image frame by frame like above and run each frame through the algoritm. Let's start by preparing a bird's eye view.
 
 Code:  
-```
+```c++
 Point2f srcVertices[4];
     
 //Define points that are used for generating bird's eye view. This was done by trial and error. Best to prepare sliders and configure for each use case.
@@ -127,13 +127,13 @@ So first we define the region of interest (in pixels) on our original image. The
 
 After we have the transformation matrix we can use it to obtain a bird's eye frame:
 
-```
+```c++
 warpPerspective(org, dst, perspectiveMatrix, dst.size(), INTER_LINEAR, BORDER_CONSTANT);
 ```
 
 This will yield the first step of the algorithm. Next thing we'll do is convert the image to grayscale as it will make the processing easier. It's usually easier to extract information from a single channel than multiple.
 
-```
+```c++
 //Convert to gray
 cvtColor(dst, img, COLOR_RGB2GRAY);
 
@@ -153,7 +153,7 @@ As mentioned we convert the image to greyscale first. Then we create a mask imag
 
 After that some patching up of the image is done in order to reduce noise, remove gaps, ... 
 
-```
+```c++
 //Blur the image a bit so that gaps are smoother
 const Size kernelSize = Size(9, 9);
 GaussianBlur(processed, processed, kernelSize, 0);
@@ -170,7 +170,7 @@ To understand in detail what this does I'd recommend looking up the documentatio
 
 Now all we need to do is threshold the image so that what's interesting is a solid white and rest is black and deemed useless.
 
-```
+```c++
 //Keep only what's above 150 value, other is then black
 const int thresholdVal = 150;
 threshold(processed, processed, thresholdVal, 255, THRESH_BINARY);
@@ -180,13 +180,13 @@ This produces image #3.
 
 And now we're finally ready to start the sliding window part of the algorithm. The call looks as follows:
 
-```
+```c++
 vector<Point2f> pts = slidingWindow(processed, Rect(0, 420, 120, 60));
 ```
 
 First argument is a `Mat` image and second is the starting `Rect` for the algorithm. Here's the implementation:
 
-```
+```c++
 vector<Point2f> slidingWindow(Mat image, Rect window)
 {
     vector<Point2f> points;
@@ -262,7 +262,7 @@ It's worth noting that the calls in the code provided use hardcoded rects (botto
 
 Once we have the points it's just a matter of visualizing them on the initial image.
 
-```
+```c++
 vector<Point2f> pts = slidingWindow(processed, Rect(0, 420, 120, 60));
 vector<Point> allPts; //Used for the end polygon at the end.
 
