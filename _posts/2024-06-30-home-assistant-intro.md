@@ -2,7 +2,7 @@
 layout:     post
 title:      "Jarvis - An AI powered home automation assistant in Rust"
 subtitle:   "An Iron Man inspired home automation assistant from scratch."
-date:       2024-06-30 20:00:00
+date:       2024-07-07 20:00:00
 author:     "Jan"
 header-img: "img/post-jarvis/bg.jpg"
 ---
@@ -13,7 +13,8 @@ Ever since I saw the first Iron Man movie and got captivated by his human-like s
 
 What we're building is obviously not going to be anywhere near Iron Man's Jarvis, but it will be able to execute commands we define for it and possibly answer a question or two. It's going to be very extendable so that modifications and upgrades can be done easily. Here's what the final product looks like:
 
-# TODO: INSERT VIDEO HERE
+`<Insert video here>`
+I'll add a video of it working soon™. I promise.
 
 _This is going to be a multipart series since there are quite a few pieces to cover, but rest assured I've actually built the thing first. Which means I won't abandon it in the middle._
 
@@ -289,4 +290,4 @@ So until we press ctrl+c, it will keep printing the mic string and then terminat
 
 ## Wrapping up
 
-We've now got a good foundation set up that allows us to delegate processing to different threads and wind them down gracefully when the user decides to terminate the app or an unhandled error happens. In the next post, we'll start looking into how to actually capture microphone input and go about processing the raw audio data.
+We've now got a good foundation set up that allows us to delegate processing to different threads and wind them down gracefully when the user decides to terminate the app or an unhandled error happens. [In the next post](https://janhalozan.com/2024/07/01/jarvis-part-1-microphone/), we'll start looking into how to actually capture microphone input and go about processing the raw audio data.
