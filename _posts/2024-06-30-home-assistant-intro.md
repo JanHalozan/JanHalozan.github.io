@@ -13,10 +13,13 @@ Ever since I saw the first Iron Man movie and got captivated by his human-like s
 
 What we're building is obviously not going to be anywhere near Iron Man's Jarvis, but it will be able to execute commands we define for it and possibly answer a question or two. It's going to be very extendable so that modifications and upgrades can be done easily. Here's what the final product looks like:
 
-`<Insert video here>`
-I'll add a video of it working soon™. I promise.
+<video width="640" height="480" controls>
+    <source src="/img/post-jarvis/jarvis.mp4">
+</video>
 
 _This is going to be a multipart series since there are quite a few pieces to cover, but rest assured I've actually built the thing first. Which means I won't abandon it in the middle._
+
+I've published the full source code here: [https://github.com/JanHalozan/jarvis](https://github.com/JanHalozan/jarvis)
 
 ## Requirements & Design choices
 
