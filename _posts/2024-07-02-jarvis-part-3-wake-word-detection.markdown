@@ -4,7 +4,7 @@ title:      "Jarvis miniseries part III: Wake word activation"
 subtitle:   "Using wake word detection to respond to speech for our AI-powered home assistant in Rust"
 date:       2024-07-01 20:00:00
 author:     "Jan"
-header-img: "img/post-lanedetector/bg.jpg"
+header-img: "img/post-jarvis/bg_wake_word.jpg"
 ---
 
 # Where we left off
@@ -18,3 +18,9 @@ Before we fire up AI to start doing speech to text recognition we want to be sur
 <a href="/img/post-jarvis/jarvis_processing_pipeline_wakeword.png">
 ![Image of the processing pipeline](/img/post-jarvis/jarvis_processing_pipeline_wakeword.png)
 </a>
+
+## This is hard
+
+So this is the one piece of the project I haven't cracked the way I'd like yet. What I mean by that is that I'd like to have a fully local heuristic approach to wake word detection. I've spent a considerable amount of time trying to do wake word detection via [Mel-frequency cepstrum](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum) to calculate the preset wake word and then compare it to the captured sample. However I had some problems with math and Rust and I've put this on hold a bit.
+
+In the meantime if you want to have a wake word detector there's a plug and play solution provided by: [https://github.com/Picovoice/porcupine](https://github.com/Picovoice/porcupine). It works great but it's not how I want to solve this challenge.
