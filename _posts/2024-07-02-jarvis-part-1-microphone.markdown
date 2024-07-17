@@ -179,7 +179,7 @@ What's this? Even more magic functions and variables that weren't explained befo
 
 Firstly we check if the speaker is active or if we're in shutdown. If we are we just return early from the callback ie. discard data. But this doesn't cause anything to shutdown just yet. We're just ignoring whatever comes into the closure.
 
-Second we resample the audio. Why? Because a pipeline step further down wants the audio to be in 1 channel but at 16k sampling rate. More on that in a subsequent post. The way resampling works can be seen below:
+Second we resample the audio. Why? Because a pipeline step further down wants the audio to be in 1 channel but at 16k sampling rate. So why not just set capture config at 16k in the first place? A good question that I asked myself too. The reason is that my device's microphone (Mac M1) input couldn't go below 48k samples. Why we need to have 16k sampling exactly will be explained in a subsequent post. The way resampling works can be seen below:
 
 ```rust
 fn resample_audio(input: &[f32], input_rate: usize, output_rate: usize) -> Vec<f32> {

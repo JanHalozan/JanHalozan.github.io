@@ -19,11 +19,25 @@ What we're building is obviously not going to be anywhere near Iron Man's Jarvis
 
 _This is going to be a multipart series since there are quite a few pieces to cover, but rest assured I've actually built the thing first. Which means I won't abandon it in the middle._
 
-I've published the full source code here: [https://github.com/JanHalozan/jarvis](https://github.com/JanHalozan/jarvis)
+I've published the full source code here: [https://github.com/JanHalozan/jarvis](https://github.com/JanHalozan/jarvis). If you have any questions you're welcome to open an issue or connect with me via [linkedin.com/in/jan-halozan](https://linkedin.com/in/jan-halozan).
+
+## Table of contents
+
+All of the links to other steps of the series can be found below.
+
+- [Microphone listener](/2024/07/01/jarvis-part-1-microphone/)
+- [VAD Chunker](/2024/07/01/jarvis-part-2-vad-chunking/)
+- [Wake word detector](/2024/07/01/jarvis-part-3-wake-word-detection/)
+- [Recognizer](/2024/07/01/jarvis-part-4-speech-to-text/)
+- [Classifier](/2024/07/01/jarvis-part-5-classifier/)
+- [Intent executor](/2024/07/01/jarvis-part-6-intent-executor/)
+- [Feedback generator](/2024/07/01/jarvis-part-7-feedback-generation/)
+- [Speech synthesizer](/2024/07/01/jarvis-part-8-speech-synthesizer/)
 
 ## Requirements & Design choices
 
 I'm going to name my assistant **Jarvis** as well to pay homage to where the idea originated. What I want Jarvis to do is pretty simple:
+
 - Take commands via speech
 - Recognize commands and determine if they're supported in our home
 - Execute the given command
@@ -46,21 +60,21 @@ We'll break Jarvis down into a lot of small components which are sequentially ti
 
 As these are nice separate blocks where each has its own concerns and functionality, I'll similarly write blog posts covering one block at a time. But first, let's look at what each block actually does (this is a very high-level overview; more detail on each block will be in its corresponding blog post):
 
-- **Microphone listener**  
+- [**Microphone listener**](/2024/07/01/jarvis-part-1-microphone/)
     As the name implies, this block will continuously listen to the microphone. It's where the pipeline starts since Jarvis is a voice-activated system.
-- **VAD Chunker**  
+- [**VAD Chunker**](/2024/07/01/jarvis-part-2-vad-chunking/)  
     The microphone will give us a continuous stream of raw audio data, which isn't very useful for any recognition. The VAD (Voice Activity Detection) chunker will take the raw audio, process it to make sure there's actually useful audio in there, and then chunk it into separate pieces.
-- **Wake word detector**  
+- [**Wake word detector**](/2024/07/01/jarvis-part-3-wake-word-detection/)  
     Because we don't want Jarvis to chime in on every conversation that might be happening around it, we'll add a wake word detector. Its job is to recognize if the audio frame contains the wake word and only then pass on the audio data onwards in the pipeline.
-- **Recognizer**  
+- [**Recognizer**](/2024/07/01/jarvis-part-4-speech-to-text/)  
     The recognizer's job is pretty simple on a high level: take an audio frame and process it into a string of text. We'll use an AI model to accomplish this.
-- **Classifier**  
+- [**Classifier**](/2024/07/01/jarvis-part-5-classifier/)  
     Once we have speech phrases, we'll need to figure out if there's anything useful inside them. To do this, we need to define the commands that Jarvis supports and find a way to classify which command (if any) is being triggered and create the Intent. Another job for AI, it seems.
-- **Intent executor**  
+- [**Intent executor**](/2024/07/01/jarvis-part-6-intent-executor/)  
     Once a command is classified and recognized, we'll call it an `Intent`. Intents are fully structured pieces of data that Jarvis supports and can act upon. The executor stage is meant to actually trigger what is supposed to happen (e.g., turn on a light).
-- **Feedback generator**  
+- [**Feedback generator**](/2024/07/01/jarvis-part-7-feedback-generation/)  
     We'd like Jarvis to talk back to us so that we know what's happening. It will either confirm what happened or explain what went wrong. The feedback generator is responsible for composing the text that will be conveyed back to the user.
-- **Speech synthesizer**  
+- [**Speech synthesizer**](/2024/07/01/jarvis-part-8-speech-synthesizer/)  
     The very last block which finally converts the feedback text into an audio stream that is played through the speakers.
 
 And it's as simple as that :)
